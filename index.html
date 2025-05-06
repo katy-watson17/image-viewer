@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="heading">Image Viewer</h2>
+    <div class="search-container">
+	    <input type="search" id="search-field" class="search-input" placeholder="Enter image URL..." value="https://">
+	    <span>or</span>
+	    <input type="file" id="offline" class="file-input">
+	    <button onclick="findImage()" class="search-button" type="button">Search</button>
+    </div>
+    <div id="image-container" class="image-container" style="display: none;">
+	    <a target="_blank" id="imglink"><img id="img" /></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
